@@ -13,6 +13,11 @@ public class Calculator {
 	}
 	
 	public int divide(int a, int b) {
-		return a / b;
+		try {
+			return a / b;
+		} catch (ArithmeticException e) {
+			throw new ArithmeticException("Cannot divide by 0");
+		}
+		
 	}
 }
