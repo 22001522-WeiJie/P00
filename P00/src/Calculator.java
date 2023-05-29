@@ -18,6 +18,5 @@ public class Calculator {
 		} catch (ArithmeticException e) {
 			throw new ArithmeticException("Cannot divide by 0");
 		}
-		
 	}
 }
