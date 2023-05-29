@@ -71,4 +71,16 @@ public class CalculatorTest {
 		int expected = 1;
 		assertEquals(actual, expected);
 	}
+	
+	@Test
+	public void testExponential() {
+		int a = 2;
+		int b = 3;
+		
+		Calculator cal = new Calculator();
+		int actual = cal.exponential(a, b);
+		
+		int expected = 8;
+		assertEquals(actual, expected);
+	}
 }
